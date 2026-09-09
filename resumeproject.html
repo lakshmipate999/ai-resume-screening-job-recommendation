@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Resume Screening & Job Recommendation</title>
+
+  
+   <link rel="stylesheet" href="resumeproject.css">
+ 
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>AI Resume Screening System</h1>
+      <p>Upload Resume • Analyze Skills • Get Job Recommendations</p>
+    </div>
+
+    <div class="main">
+
+      <!-- LEFT SIDE -->
+      <div class="card">
+        <h2>Upload Resume</h2>
+
+        <label class="upload-box">
+          <input type="file" id="resumeUpload">
+          <h3>📄 Upload Resume</h3>
+          <p>PDF / DOCX Supported</p>
+        </label>
+
+        <br>
+
+        <textarea id="resumeText" placeholder="Or paste resume text here..."></textarea>
+
+        <button class="btn" onclick="analyzeResume()">
+          Analyze Resume
+        </button>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="card">
+        <h2>Analysis Result</h2>
+
+        <div id="resultArea">
+
+          <p style="color:#cbd5e1;">
+            Upload a resume to see AI analysis.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer">
+      Built with HTML • CSS • JavaScript | AI Resume Screening Project
+    </div>
+
+  </div>
+
+  <script>
+
+    
